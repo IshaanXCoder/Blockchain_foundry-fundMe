@@ -26,7 +26,7 @@ contract FundMeTest is Test {
         assertEq(fundMe.i_owner(), owner); // Check that owner is correctly set
     }
 
-    function testPrideFeedVersionIsAccurate() public {
+    function testPriceFeedVersionIsAccurate() public {
         uint256 version = fundMe.getVersion();
         assertEq(version, 4);
     }
